@@ -1,0 +1,25 @@
+[
+    {"intent": "greeting", "text": "hi"},
+    {"intent": "greeting", "text": "hello"},
+    {"intent": "greeting", "text": "hey there"},
+    {"intent": "greeting", "text": "good morning"},
+    {"intent": "greeting", "text": "yo!"},
+    
+    {"intent": "ask_age", "text": "how old are you?"},
+    {"intent": "ask_age", "text": "what's your age?"},
+    {"intent": "ask_age", "text": "can I know your age?"},
+    
+    {"intent": "ask_time", "text": "what time is it?"},
+    {"intent": "ask_time", "text": "do you know the current time?"},
+    {"intent": "ask_time", "text": "tell me the time now."},
+  
+    {"intent": "ask_name", "text": "what's your name?"},
+    {"intent": "ask_name", "text": "do you have a name?"},
+    {"intent": "ask_name", "text": "can you tell me your name?"},
+  
+    {"intent": "goodbye", "text": "bye"},
+    {"intent": "goodbye", "text": "see you later"},
+    {"intent": "goodbye", "text": "I'm leaving now"},
+    {"intent": "goodbye", "text": "talk to you later"}
+  ]
+  

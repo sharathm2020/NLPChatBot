@@ -65,12 +65,22 @@
     {"intent": "add_todo", "text": "remind me to walk the dog"},
     {"intent": "add_todo", "text": "add 'call mom' to my to-do list"},
     {"intent": "add_todo", "text": "remember to take out the trash"},
+    {"intent": "add_todo", "text": "please remember to check my emails"},
+    {"intent": "add_todo", "text": "add 'finish cs project' to the list"},
+    {"intent": "add_todo", "text": "note to call the dentist"},
+
     {"intent": "get_todo", "text": "what's on my to-do list"},
-    {"intent": "get-todo", "text": "what is on my to-do list"},
-    {"intent": "get-todo", "text": "show me my to-do list"},
+    {"intent": "get_todo", "text": "what is on my to-do list"},
+    {"intent": "get_todo", "text": "show me my to-do list"},
     {"intent": "get_todo", "text": "show me my reminders"},
+    {"intent": "get_todo", "text": "what tasks do I have?"},
+    {"intent": "get_todo", "text": "can you read my to-do list?"},
+    
     {"intent": "clear_todo", "text": "clear my reminders"},
     {"intent": "clear_todo", "text": "delete all to-dos"},
+    {"intent": "clear_todo", "text": "clear my to-do list"},
+    {"intent": "clear_todo", "text": "clear out all my tasks"},
+    {"intent": "clear_todo", "text": "remove everything from my to-do list"},
 
 
     {"intent": "goodbye", "text": "bye"},

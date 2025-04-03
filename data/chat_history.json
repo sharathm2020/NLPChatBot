@@ -153,5 +153,85 @@
     "timestamp": "2025-04-02T16:20:18.580108",
     "user": "what's on my to-do list?",
     "bot": "The weather in New York is clear sky, around 6.24\u00b0C."
+  },
+  {
+    "timestamp": "2025-04-02T16:56:41.469836",
+    "user": "what is on my to-do list?",
+    "bot": "The weather in New York is clear sky, around 6.19\u00b0C."
+  },
+  {
+    "timestamp": "2025-04-02T16:56:51.956424",
+    "user": "add \"a1cs380\" to  my to-do list",
+    "bot": "Your to-do list has been cleared."
+  },
+  {
+    "timestamp": "2025-04-02T16:57:13.978176",
+    "user": "add \"assignment1\" to my to-do list",
+    "bot": "Your to-do list has been cleared."
+  },
+  {
+    "timestamp": "2025-04-02T17:04:56.777308",
+    "user": "add \"assignment1\" to my to-do list",
+    "bot": "Got it! I\u2019ve added 'add \"assignment1\" to my to-do list' to your to-do list."
+  },
+  {
+    "timestamp": "2025-04-02T17:05:02.660883",
+    "user": "what's on my to-do list?",
+    "bot": "Here\u2019s your current to-do list:\n- add \"assignment1\" to my to-do list"
+  },
+  {
+    "timestamp": "2025-04-02T17:05:17.109065",
+    "user": "add 'a1cs380' to my to-do list",
+    "bot": "Got it! I\u2019ve added 'add 'a1cs380' to my to-do list' to your to-do list."
+  },
+  {
+    "timestamp": "2025-04-02T17:05:21.765805",
+    "user": "whats on my to-do list?",
+    "bot": "Here\u2019s your current to-do list:\n- add \"assignment1\" to my to-do list\n- add 'a1cs380' to my to-do list"
+  },
+  {
+    "timestamp": "2025-04-03T00:24:41.384212",
+    "user": "remind me to finish assignment1",
+    "bot": "Got it! I\u2019ve added 'finish assignment1' to your to-do list."
+  },
+  {
+    "timestamp": "2025-04-03T00:24:53.290737",
+    "user": "remind me to call mom",
+    "bot": "Got it! I\u2019ve added 'call mom' to your to-do list."
+  },
+  {
+    "timestamp": "2025-04-03T00:25:00.749404",
+    "user": "whats on my to-do list?",
+    "bot": "Here\u2019s your current to-do list:\n- add \"assignment1\" to my to-do list\n- add 'a1cs380' to my to-do list\n- finish assignment1\n- call mom"
+  },
+  {
+    "timestamp": "2025-04-03T00:25:16.601015",
+    "user": "add call dad tomorrow at 3pm",
+    "bot": "Got it! I\u2019ve added 'call dad tomorrow at 3pm' to your to-do list."
+  },
+  {
+    "timestamp": "2025-04-03T00:25:27.904044",
+    "user": "whats on my todo list",
+    "bot": "Here\u2019s your current to-do list:\n- add \"assignment1\" to my to-do list\n- add 'a1cs380' to my to-do list\n- finish assignment1\n- call mom\n- call dad tomorrow at 3pm"
+  },
+  {
+    "timestamp": "2025-04-03T00:25:31.957487",
+    "user": "clear todo list",
+    "bot": "That\u2019s too vague. Did you mean: Todo Bichig, To-do list, TODO (tag)?"
+  },
+  {
+    "timestamp": "2025-04-03T00:25:36.455212",
+    "user": "clear my to-do list",
+    "bot": "Here\u2019s your current to-do list:\n- add \"assignment1\" to my to-do list\n- add 'a1cs380' to my to-do list\n- finish assignment1\n- call mom\n- call dad tomorrow at 3pm"
+  },
+  {
+    "timestamp": "2025-04-03T00:25:59.882379",
+    "user": "clear all to-dos",
+    "bot": "Your to-do list has been cleared."
+  },
+  {
+    "timestamp": "2025-04-03T00:26:04.993948",
+    "user": "whats on my to-do list",
+    "bot": "Your to-do list is empty."
   }
 ]

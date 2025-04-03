@@ -233,5 +233,40 @@
     "timestamp": "2025-04-03T00:26:04.993948",
     "user": "whats on my to-do list",
     "bot": "Your to-do list is empty."
+  },
+  {
+    "timestamp": "2025-04-03T19:46:07.566602",
+    "user": "hello",
+    "bot": "Hello! How can I help you?"
+  },
+  {
+    "timestamp": "2025-04-03T19:46:13.155697",
+    "user": "what is the weather in New york today?",
+    "bot": "The weather in New york is clear sky, around 20.21\u00b0C."
+  },
+  {
+    "timestamp": "2025-04-03T19:46:17.968518",
+    "user": "what is the weather in paris?",
+    "bot": "The weather in paris is clear sky, around 14.18\u00b0C."
+  },
+  {
+    "timestamp": "2025-04-03T19:46:25.481696",
+    "user": "who was thomas jefferson?",
+    "bot": "Thomas Jefferson (April 13 [O.S. April 2], 1743 \u2013 July 4, 1826) was an American Founding Father who served as the third president of the United States from 1801 to 1809. He was the primary author of the Declaration of Independence."
+  },
+  {
+    "timestamp": "2025-04-03T19:46:34.237425",
+    "user": "remind me to finish assignment 1",
+    "bot": "Got it! I\u2019ve added 'finish assignment 1' to your to-do list."
+  },
+  {
+    "timestamp": "2025-04-03T19:46:39.418072",
+    "user": "show me my to-do list",
+    "bot": "Here\u2019s your current to-do list:\n- finish assignment 1"
+  },
+  {
+    "timestamp": "2025-04-03T19:46:43.413039",
+    "user": "clear my to-do list",
+    "bot": "Your to-do list has been cleared."
   }
 ]

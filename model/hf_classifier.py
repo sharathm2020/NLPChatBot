@@ -7,9 +7,9 @@ class TransformerIntentClassifier:
         self.tokenizer = AutoTokenizer.from_pretrained(model_path)
         self.model = AutoModelForSequenceClassification.from_pretrained(model_path)
 
-    def predict(self, text):
+    def predict(self, text: str) -> str:
         inputs = self.tokenizer(text, return_tensors="pt", truncation=True, padding=True)
-        outputs = self.model(**inputs)
-        predicted = torch.argmax(outputs.logits, dim=1).item()
-        label = self.model.config.id2label[predicted]
-        return label
+        with torch.no_grad():
+            logits = self.model(**inputs).logits
+        prediction = torch.argmax(logits, dim=1).item()
+        return self.model.config.id2label[prediction]

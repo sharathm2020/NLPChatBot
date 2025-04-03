@@ -1,0 +1,157 @@
+[
+  {
+    "timestamp": "2025-04-02T15:23:20.064609",
+    "user": "hello",
+    "bot": "Hello! How can I help you?"
+  },
+  {
+    "timestamp": "2025-04-02T15:23:21.895178",
+    "user": "how are you",
+    "bot": "The weather in New York is clear sky, around 6.6\u00b0C."
+  },
+  {
+    "timestamp": "2025-04-02T15:23:36.190581",
+    "user": "how old are you",
+    "bot": "I'm 1 years old."
+  },
+  {
+    "timestamp": "2025-04-02T15:23:39.688275",
+    "user": "what is the weather today",
+    "bot": "The weather in New York is clear sky, around 6.6\u00b0C."
+  },
+  {
+    "timestamp": "2025-04-02T15:23:48.730360",
+    "user": "what is the weather in new york tomorrow?",
+    "bot": "The weather in new york is clear sky, around 6.6\u00b0C."
+  },
+  {
+    "timestamp": "2025-04-02T15:23:55.857126",
+    "user": "show me tech news",
+    "bot": "Here are some headlines:\n"
+  },
+  {
+    "timestamp": "2025-04-02T15:24:18.154989",
+    "user": "what is the weather in paris?",
+    "bot": "The weather in paris is clear sky, around 15.35\u00b0C."
+  },
+  {
+    "timestamp": "2025-04-02T15:24:25.319894",
+    "user": "give me the latest headlines",
+    "bot": "Here are some headlines:\n"
+  },
+  {
+    "timestamp": "2025-04-02T15:36:20.169263",
+    "user": "hello",
+    "bot": "Hello! How can I help you?"
+  },
+  {
+    "timestamp": "2025-04-02T15:36:24.415748",
+    "user": "who is alexander the great",
+    "bot": "The weather in New York is clear sky, around 6.69\u00b0C."
+  },
+  {
+    "timestamp": "2025-04-02T15:36:31.096424",
+    "user": "who is alexander the great?",
+    "bot": "The weather in New York is clear sky, around 6.69\u00b0C."
+  },
+  {
+    "timestamp": "2025-04-02T15:36:50.572795",
+    "user": "who is albert einstein?",
+    "bot": "The weather in New York is clear sky, around 6.53\u00b0C."
+  },
+  {
+    "timestamp": "2025-04-02T15:37:06.099467",
+    "user": "what is 14 * 9",
+    "bot": "The answer is 126"
+  },
+  {
+    "timestamp": "2025-04-02T15:37:09.648798",
+    "user": "what is 13x13",
+    "bot": "The answer is 169"
+  },
+  {
+    "timestamp": "2025-04-02T15:37:14.027976",
+    "user": "what is the sun made of",
+    "bot": "The weather in New York is clear sky, around 6.53\u00b0C."
+  },
+  {
+    "timestamp": "2025-04-02T15:37:27.571893",
+    "user": "who is albert",
+    "bot": "The weather in New York is clear sky, around 6.58\u00b0C."
+  },
+  {
+    "timestamp": "2025-04-02T15:37:32.050367",
+    "user": "who is elon musk",
+    "bot": "The weather in New York is clear sky, around 6.58\u00b0C."
+  },
+  {
+    "timestamp": "2025-04-02T15:39:22.457919",
+    "user": "what is 82 divided by 6",
+    "bot": "The answer is 13.666666666666666"
+  },
+  {
+    "timestamp": "2025-04-02T15:43:26.652886",
+    "user": "hello",
+    "bot": "Hello! How can I help you?"
+  },
+  {
+    "timestamp": "2025-04-02T15:43:29.909792",
+    "user": "what is 13x13",
+    "bot": "The answer is 169"
+  },
+  {
+    "timestamp": "2025-04-02T15:43:35.064379",
+    "user": "what is 82 divided by 2",
+    "bot": "The answer is 41.0"
+  },
+  {
+    "timestamp": "2025-04-02T15:43:42.945990",
+    "user": "who is albert einstein",
+    "bot": "Hans Albert Einstein (May 14, 1904 \u2013 July 26, 1973) was a Swiss-American engineer, the second child and first son of physicists Albert Einstein and Mileva Mari\u0107. He was a long-time professor of hydraulic engineering at the University of California, Berkeley."
+  },
+  {
+    "timestamp": "2025-04-02T15:43:49.081674",
+    "user": "who was alexander the great",
+    "bot": "Alexander III of Macedon (Ancient Greek: \u1f08\u03bb\u03ad\u03be\u03b1\u03bd\u03b4\u03c1\u03bf\u03c2, romanized: Al\u00e9xandros; 20/21 July 356 BC \u2013 10/11 June 323 BC), most commonly known as Alexander the Great, was a king of the ancient Greek kingdom of Macedon. He succeeded his father Philip II to the throne in 336 BC at the age of 20 and spent most of his ruling years conducting a lengthy military campaign throughout Western Asia, Central Asia, parts of South Asia, and Egypt."
+  },
+  {
+    "timestamp": "2025-04-02T15:44:03.354859",
+    "user": "how is technology doing today?",
+    "bot": "The weather in New York is clear sky, around 6.49\u00b0C."
+  },
+  {
+    "timestamp": "2025-04-02T15:44:10.613273",
+    "user": "what are the latest headlines",
+    "bot": "Here are some headlines:\n"
+  },
+  {
+    "timestamp": "2025-04-02T15:44:20.610812",
+    "user": "what are the latest tech headlines",
+    "bot": "Here are some headlines:\n"
+  },
+  {
+    "timestamp": "2025-04-02T15:44:30.728294",
+    "user": "how was tesla founded?",
+    "bot": "The Tesla Cybertruck is a battery-powered electric pickup truck manufactured by Tesla, Inc. since 2023."
+  },
+  {
+    "timestamp": "2025-04-02T15:46:04.905800",
+    "user": "Perfect",
+    "bot": "Hello! How can I help you?"
+  },
+  {
+    "timestamp": "2025-04-02T16:20:05.187167",
+    "user": "add 'finish-assignment' to my to-do list",
+    "bot": "Got it! I\u2019ve added 'add 'finish-assignment' to my to-do list' to your to-do list."
+  },
+  {
+    "timestamp": "2025-04-02T16:20:10.517731",
+    "user": "whats on my to-do list?",
+    "bot": "The weather in New York is clear sky, around 6.24\u00b0C."
+  },
+  {
+    "timestamp": "2025-04-02T16:20:18.580108",
+    "user": "what's on my to-do list?",
+    "bot": "The weather in New York is clear sky, around 6.24\u00b0C."
+  }
+]

@@ -1,9 +1,23 @@
-echo venv/ > .gitignore
-echo __pycache__/ >> .gitignore
-echo *.pt >> .gitignore
-echo *.safetensors >> .gitignore
-echo *.bin >> .gitignore
-echo *.dll >> .gitignore
-echo *.lib >> .gitignore
-echo model/transformer_output/ >> .gitignore
-echo data/todos.json >> .gitignore
+# Ignore virtual environments
+venv/
+
+# Python cache
+__pycache__/
+
+# Model artifacts
+*.pt
+*.safetensors
+*.bin
+*.pkl
+*.pth
+
+# Compiled files
+*.dll
+*.lib
+
+# HuggingFace training outputs
+model/transformer_output/
+
+# Local bot data (not production-worthy)
+data/todos.json
+data/chat_history.json

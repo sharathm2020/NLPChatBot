@@ -1,8 +1,13 @@
 #News API
 import requests
+from model.config.config import NEWS_API_KEY
 
 def get_news():
-    api_key = "e265e272b73c408d8ce6a4954e5baa3b"
+    # api_key = "e265e272b73c408d8ce6a4954e5baa3b" # Hardcoded key removed
+    api_key = NEWS_API_KEY
+    if not api_key:
+        return "Error: News API key not configured."
+
     url = f"https://newsapi.org/v2/top-headlines?category=technology&q=stock%20market&language=en&pageSize=3&apiKey={api_key}"
 
     try:

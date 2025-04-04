@@ -1,11 +1,11 @@
-from model.hf_classifier import TransformerIntentClassifier
-from model.ner import extract_entities
-from model.weather_api import get_weather
-from model.news_api import get_news
-from model.search_api import search_answer
-from model.math_engine import calculate
-from model.memory import save_to_history
-from model.todo import add_todo, get_todos, clear_todos
+from model.ml.hf_classifier import TransformerIntentClassifier
+from model.ml.ner import extract_entities
+from model.api.weather_api import get_weather
+from model.api.news_api import get_news
+from model.api.search_api import search_answer
+from model.core.math_engine import calculate
+from model.core.memory import save_to_history
+from model.core.todo import add_todo, get_todos, clear_todos
 from collections import deque
 import datetime
 

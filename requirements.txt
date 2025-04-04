@@ -8,3 +8,6 @@ transformers==4.38.2
 accelerate==0.27.2
 tabulate
 wikipedia
+python-dotenv
+nltk
+requests

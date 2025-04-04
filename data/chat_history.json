@@ -268,5 +268,35 @@
     "timestamp": "2025-04-03T19:46:43.413039",
     "user": "clear my to-do list",
     "bot": "Your to-do list has been cleared."
+  },
+  {
+    "timestamp": "2025-04-03T20:34:44.427081",
+    "user": "hello",
+    "bot": "Hello! How can I help you?"
+  },
+  {
+    "timestamp": "2025-04-03T20:34:48.763203",
+    "user": "what is the weather in new york?",
+    "bot": "The weather in new york is clear sky, around 20.86\u00b0C."
+  },
+  {
+    "timestamp": "2025-04-03T20:34:52.673571",
+    "user": "what time is it",
+    "bot": "That\u2019s too vague. Did you mean: What Time Is It? (film), What Time Is It? (album), \"What Time Is It?\" (song)?"
+  },
+  {
+    "timestamp": "2025-04-03T20:34:56.989772",
+    "user": "what is the time?",
+    "bot": "The weather in New York is clear sky, around 20.86\u00b0C."
+  },
+  {
+    "timestamp": "2025-04-03T20:35:04.448951",
+    "user": "what is the current time?",
+    "bot": "The time is 20:35:04."
+  },
+  {
+    "timestamp": "2025-04-03T20:35:13.766690",
+    "user": "who is thomas jefferson",
+    "bot": "Thomas Jefferson (April 13 [O.S. April 2], 1743 \u2013 July 4, 1826) was an American Founding Father who served as the third president of the United States from 1801 to 1809. He was the primary author of the Declaration of Independence."
   }
 ]

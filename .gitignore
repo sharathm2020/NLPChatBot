@@ -21,3 +21,6 @@ model/transformer_output/
 # Local bot data (not production-worthy)
 data/todos.json
 data/chat_history.json
+
+# Environment variables
+.env

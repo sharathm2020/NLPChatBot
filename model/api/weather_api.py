@@ -1,8 +1,13 @@
 #Weather API
 import requests
+from model.config.config import WEATHER_API_KEY
 
 def get_weather(city="New York"):
-    api_key = "1435e42b1af16b86cbd67556f60cb089"
+    # api_key = "1435e42b1af16b86cbd67556f60cb089" # Hardcoded key removed
+    api_key = WEATHER_API_KEY
+    if not api_key:
+        return "Error: Weather API key not configured."
+
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
     try:
         res = requests.get(url)

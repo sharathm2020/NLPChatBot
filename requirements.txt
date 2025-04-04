@@ -11,3 +11,8 @@ wikipedia
 python-dotenv
 nltk
 requests
+fastapi
+uvicorn
+pydantic
+pytest
+httpx

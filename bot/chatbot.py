@@ -10,10 +10,11 @@ from collections import deque
 import datetime
 
 class ChatBot:
-    def __init__(self, name="NLPBot"):
+    def __init__(self, name="NLPBot", intent_classifier=None):
         self.name = name
-        self.intent_classifier = TransformerIntentClassifier()
+        self.intent_classifier = intent_classifier or TransformerIntentClassifier()
         self.context = deque(maxlen=5)
+
 
     def handle_intent(self, intent, user_input, entities):
         if intent == "greeting":

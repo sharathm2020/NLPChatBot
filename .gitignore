@@ -24,3 +24,16 @@ data/chat_history.json
 
 # Environment variables
 .env
+
+# FastAPI & project structure
+__pycache__/
+*.pyc
+logs/
+
+htmlcov/
+.coverage
+.cache/
+pytest.ini
+
+.DS_Store
+Thumbs.db

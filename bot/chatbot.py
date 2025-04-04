@@ -7,6 +7,7 @@ from model.core.math_engine import calculate
 from model.core.memory import save_to_history
 from model.core.todo import add_todo, get_todos, clear_todos
 from model.core.preprocess import clean_math_input, extract_task
+from model.config.config import CONFIDENCE_THRESHOLD
 from collections import deque
 import datetime
 
@@ -53,12 +54,10 @@ class ChatBot:
     def handle_ask_math(self, user_input, *_):
         cleaned = clean_math_input(user_input)
         return calculate(cleaned)
-
     def handle_ask_search(self, clean_input, *_): return search_answer(clean_input)
     def handle_add_todo(self, user_input, *_):
         task = extract_task(user_input)
         return add_todo(task)
-
     def handle_get_todo(self, *_): return get_todos()
     def handle_clear_todo(self, *_): return clear_todos()
     def handle_goodbye(self, *_): return "Goodbye! Talk to you soon."
@@ -72,9 +71,17 @@ class ChatBot:
                 break
 
             self.context.append(user_input)
-            intent = self.intent_classifier.predict(user_input)
+
+            # NEW: predict intent and confidence
+            intent, confidence = self.intent_classifier.predict(user_input)
+            print(f"(DEBUG - Intent Detected: {intent} | Confidence: {confidence:.2f})")
+
             entities = extract_entities(user_input)
-            print(f"(DEBUG - Intent Detected: {intent})")
-            response = self.handle_intent(intent, user_input, entities)
+
+            if confidence < CONFIDENCE_THRESHOLD:
+                response = "I'm not sure what you meant. Could you rephrase that?"
+            else:
+                response = self.handle_intent(intent, user_input, entities)
+
             print(f"{self.name}: {response}")
             save_to_history(user_input, response)

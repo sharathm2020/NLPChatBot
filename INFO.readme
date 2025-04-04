@@ -4,3 +4,6 @@
 - Run "python -m spacy download en_core_web_sm" in the virtual environment
 - Run train_transfomers.python
 - Run main.py
+
+
+- If you want to deploy the API, just run "uvicorn app.main:app --reload"

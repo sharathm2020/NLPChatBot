@@ -398,5 +398,80 @@
     "timestamp": "2025-04-03T23:05:20.620605",
     "user": "wibbly wobbly woo",
     "bot": "I'm not sure what you meant. Could you rephrase that?"
+  },
+  {
+    "timestamp": "2025-04-04T00:33:23.253112",
+    "user": "hello there!",
+    "bot": "Hello! How can I help you?"
+  },
+  {
+    "timestamp": "2025-04-04T00:33:31.809804",
+    "user": "Remind me to buy milk",
+    "bot": "Got it! I\u2019ve added 'buy milk' to your to-do list."
+  },
+  {
+    "timestamp": "2025-04-04T00:33:38.118403",
+    "user": "Who was isaac newton?",
+    "bot": "Sir Isaac Newton (; 4 January [O.S. 25 December] 1643 \u2013 31 March [O.S. 20 March] 1727) was an English polymath active as a mathematician, physicist, astronomer, alchemist, theologian, and author. Newton was a key figure in the Scientific Revolution and the Enlightenment that followed."
+  },
+  {
+    "timestamp": "2025-04-04T00:33:41.092397",
+    "user": "What is your name?",
+    "bot": "I'm not sure what you meant. Could you rephrase that?"
+  },
+  {
+    "timestamp": "2025-04-04T00:33:46.251796",
+    "user": "What's your name?",
+    "bot": "I'm not sure what you meant. Could you rephrase that?"
+  },
+  {
+    "timestamp": "2025-04-04T00:33:50.683672",
+    "user": "Who are you?",
+    "bot": "I'm not sure what you meant. Could you rephrase that?"
+  },
+  {
+    "timestamp": "2025-04-04T00:34:02.430242",
+    "user": "What time is it?",
+    "bot": "I'm not sure what you meant. Could you rephrase that?"
+  },
+  {
+    "timestamp": "2025-04-04T00:34:08.359347",
+    "user": "What is the weather in New york?",
+    "bot": "I'm not sure what you meant. Could you rephrase that?"
+  },
+  {
+    "timestamp": "2025-04-04T00:51:55.153022",
+    "user": "hello",
+    "bot": "Hello! How can I help you?"
+  },
+  {
+    "timestamp": "2025-04-04T00:51:58.460946",
+    "user": "what is your name?",
+    "bot": "I'm NLPBot, your assistant!"
+  },
+  {
+    "timestamp": "2025-04-04T00:52:02.509179",
+    "user": "Who are you?",
+    "bot": "I'm NLPBot, your assistant!"
+  },
+  {
+    "timestamp": "2025-04-04T00:52:05.835519",
+    "user": "What time is it?",
+    "bot": "The time is 00:52:05."
+  },
+  {
+    "timestamp": "2025-04-04T00:52:13.424348",
+    "user": "What's the weather in New York?",
+    "bot": "The weather in New York is clear sky, around 21.04\u00b0C."
+  },
+  {
+    "timestamp": "2025-04-04T00:52:17.510525",
+    "user": "Whats the weather in Paris?",
+    "bot": "The weather in Paris is light rain, around 13.21\u00b0C."
+  },
+  {
+    "timestamp": "2025-04-04T00:52:24.326220",
+    "user": "remind me to finish my assignment",
+    "bot": "Got it! I\u2019ve added 'finish my assignment' to your to-do list."
   }
 ]

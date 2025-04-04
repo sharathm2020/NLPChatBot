@@ -4,14 +4,37 @@
     {"intent": "greeting", "text": "hey there"},
     {"intent": "greeting", "text": "good morning"},
     {"intent": "greeting", "text": "yo!"},
-    
+    {"intent": "greeting", "text": "hey!"},
+    {"intent": "greeting", "text": "hi there"},
+    {"intent": "greeting", "text": "howdy"},
+    {"intent": "greeting", "text": "what's up"},
+    {"intent": "greeting", "text": "sup bot"},
+    {"intent": "greeting", "text": "hey bot!"},
+    {"intent": "greeting", "text": "yo bot"},
+    {"intent": "greeting", "text": "hiya"},
+    {"intent": "greeting", "text": "how are you doing?"},
+    {"intent": "greeting", "text": "hello, how’s your day going?"},
+    {"intent": "greeting", "text": "greetings!"},
+    {"intent": "greeting", "text": "how’s it going?"},
+    {"intent": "greeting", "text": "how are things?"},
+
+
     {"intent": "ask_age", "text": "how old are you?"},
     {"intent": "ask_age", "text": "what's your age?"},
     {"intent": "ask_age", "text": "can I know your age?"},
+
     
     {"intent": "ask_time", "text": "what time is it?"},
     {"intent": "ask_time", "text": "do you know the current time?"},
     {"intent": "ask_time", "text": "tell me the time now."},
+    {"intent": "ask_time", "text": "can you tell me the time?"},
+    {"intent": "ask_time", "text": "what's the current time?"},
+    {"intent": "ask_time", "text": "what hour is it?"},
+    {"intent": "ask_time", "text": "do you know the time?"},
+    {"intent": "ask_time", "text": "clock check please"},
+    {"intent": "ask_time", "text": "give me the time now"},
+    {"intent": "ask_time", "text": "what’s the exact time right now?"},
+
   
     {"intent": "ask_weather", "text": "what is the weather like today?"},
     {"intent": "ask_weather", "text": "can you check the weather?"},
@@ -23,6 +46,14 @@
     {"intent": "ask_weather", "text": "can you tell me if it's cold outside?"},
     {"intent": "ask_weather", "text": "what's the weather in Paris"},
     {"intent": "ask_weather", "text": "do I need a jacket in San Francisco"},
+    {"intent": "ask_weather", "text": "how's the weather in New York?"},
+    {"intent": "ask_weather", "text": "is it going to rain in Los Angeles?"},
+    {"intent": "ask_weather", "text": "weather forecast for Boston"},
+    {"intent": "ask_weather", "text": "do I need a coat today in Chicago?"},
+    {"intent": "ask_weather", "text": "is it snowing anywhere?"},
+    {"intent": "ask_weather", "text": "how hot is it in Texas?"},
+    {"intent": "ask_weather", "text": "what’s the temp like outside?"},
+    {"intent": "ask_weather", "text": "can I wear shorts today?"},
 
     
     {"intent": "ask_news", "text": "show me tech news"},
@@ -39,6 +70,20 @@
     {"intent": "ask_name", "text": "do you have a name?"},
     {"intent": "ask_name", "text": "can you tell me your name?"},
     {"intent": "ask_name", "text": "what is your name?"},
+    {"intent": "ask_name", "text": "what are you called?"},
+    {"intent": "ask_name", "text": "do you have a name bot?"},
+    {"intent": "ask_name", "text": "i want to know your name"},
+    {"intent": "ask_name", "text": "your name please"},
+    {"intent": "ask_name", "text": "may I know your name?"},
+    {"intent": "ask_name", "text": "who are you?"},
+    {"intent": "ask_name", "text": "who am I talking to?"},
+    {"intent": "ask_name", "text": "introduce yourself"},
+    {"intent": "ask_name", "text": "what should I call you?"},
+    {"intent": "ask_name", "text": "do you go by a name?"},
+    {"intent": "ask_name", "text": "bot, what's your name?"},
+    {"intent": "ask_name", "text": "I'd like to know your name"},
+    {"intent": "ask_name", "text": "what's your bot name?"},
+
 
     {"intent": "ask_search", "text": "who is albert einstein"},
     {"intent": "ask_search", "text": "what is machine learning"},
@@ -56,6 +101,12 @@
     {"intent": "ask_search", "text": "how do volcanoes erupt"},
     {"intent": "ask_search", "text": "what causes earthquakes"},
     {"intent": "ask_search", "text": "who discovered gravity"},
+    {"intent": "ask_search", "text": "who was thomas jefferson"},
+    {"intent": "ask_search", "text": "what is space exploration"},
+    {"intent": "ask_search", "text": "explain who Elon Musk is"},
+    {"intent": "ask_search", "text": "do you know about dinosaurs?"},
+    {"intent": "ask_search", "text": "give me a quick explanation on the moon landing"},
+
 
     {"intent": "ask_math", "text": "what is 12 x 12"},
     {"intent": "ask_math", "text": "calculate 100 divided by 5"},
@@ -82,6 +133,7 @@
     {"intent": "ask_math", "text": "how much is 22% of 50"},
     {"intent": "ask_math", "text": "what’s the square root of 64?"},
 
+    
     {"intent": "add_todo", "text": "remind me to walk the dog"},
     {"intent": "add_todo", "text": "add 'call mom' to my to-do list"},
     {"intent": "add_todo", "text": "remember to take out the trash"},
@@ -98,6 +150,12 @@
     {"intent": "add_todo", "text": "put 'finish essay' on my to-do list"},
     {"intent": "add_todo", "text": "track 'renew license' task"},
     {"intent": "add_todo", "text": "keep 'meet advisor' in mind"},
+    {"intent": "add_todo", "text": "remind me to finish CS380HW1"},
+    {"intent": "add_todo", "text": "add assignment1 to my todo list"},
+    {"intent": "add_todo", "text": "i need to do homework tonight"},
+    {"intent": "add_todo", "text": "log my task to submit report"},
+    {"intent": "add_todo", "text": "save buy groceries"},
+    {"intent": "add_todo", "text": "keep in mind call grandma"},
 
 
     {"intent": "get_todo", "text": "what's on my to-do list"},
@@ -106,6 +164,7 @@
     {"intent": "get_todo", "text": "show me my reminders"},
     {"intent": "get_todo", "text": "what tasks do I have?"},
     {"intent": "get_todo", "text": "can you read my to-do list?"},
+
     
     {"intent": "clear_todo", "text": "clear my reminders"},
     {"intent": "clear_todo", "text": "delete all to-dos"},

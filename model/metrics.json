@@ -18,9 +18,9 @@
     "support": 1.0
   },
   "ask_name": {
-    "precision": 0.0,
-    "recall": 0.0,
-    "f1-score": 0.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
     "support": 1.0
   },
   "ask_news": {
@@ -30,9 +30,9 @@
     "support": 2.0
   },
   "ask_search": {
-    "precision": 0.42857142857142855,
+    "precision": 0.5,
     "recall": 1.0,
-    "f1-score": 0.6,
+    "f1-score": 0.6666666666666666,
     "support": 3.0
   },
   "ask_time": {
@@ -42,15 +42,15 @@
     "support": 0.0
   },
   "ask_weather": {
-    "precision": 0.5,
+    "precision": 0.6666666666666666,
     "recall": 1.0,
-    "f1-score": 0.6666666666666666,
+    "f1-score": 0.8,
     "support": 2.0
   },
   "clear_todo": {
-    "precision": 0.0,
-    "recall": 0.0,
-    "f1-score": 0.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
     "support": 1.0
   },
   "get_todo": {
@@ -72,21 +72,21 @@
     "support": 1.0
   },
   "micro avg": {
-    "precision": 0.5333333333333333,
-    "recall": 0.5333333333333333,
-    "f1-score": 0.5333333333333333,
+    "precision": 0.6666666666666666,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.6666666666666666,
     "support": 15.0
   },
   "macro avg": {
-    "precision": 0.28571428571428575,
-    "recall": 0.375,
-    "f1-score": 0.3,
+    "precision": 0.47222222222222215,
+    "recall": 0.5416666666666666,
+    "f1-score": 0.48333333333333334,
     "support": 15.0
   },
   "weighted avg": {
-    "precision": 0.38571428571428573,
-    "recall": 0.5333333333333333,
-    "f1-score": 0.40888888888888886,
+    "precision": 0.5555555555555555,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.5733333333333334,
     "support": 15.0
   }
 }

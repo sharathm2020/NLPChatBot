@@ -2,8 +2,8 @@
 - Create python 3.11 virtual environment
 - Run pip install for requirements.txt
 - Run "python -m spacy download en_core_web_sm" in the virtual environment
-- Run train_transfomers.python
-- Run main.py
+- Run "python scripts/train_transfomers.py"
+- Run "python main.py"
 
 
 - If you want to deploy the API, just run "uvicorn app.main:app --reload"

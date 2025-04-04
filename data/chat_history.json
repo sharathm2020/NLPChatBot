@@ -298,5 +298,25 @@
     "timestamp": "2025-04-03T20:35:13.766690",
     "user": "who is thomas jefferson",
     "bot": "Thomas Jefferson (April 13 [O.S. April 2], 1743 \u2013 July 4, 1826) was an American Founding Father who served as the third president of the United States from 1801 to 1809. He was the primary author of the Declaration of Independence."
+  },
+  {
+    "timestamp": "2025-04-03T21:57:10.943478",
+    "user": "hello",
+    "bot": "Hello! How can I help you?"
+  },
+  {
+    "timestamp": "2025-04-03T21:57:21.755384",
+    "user": "what's the weather in paris?",
+    "bot": "The weather in paris is clear sky, around 13\u00b0C."
+  },
+  {
+    "timestamp": "2025-04-03T21:57:28.040929",
+    "user": "what is 8 x 9",
+    "bot": "The answer is 72"
+  },
+  {
+    "timestamp": "2025-04-03T21:57:33.054420",
+    "user": "remind me to submit hw",
+    "bot": "Got it! I\u2019ve added 'submit hw' to your to-do list."
   }
 ]

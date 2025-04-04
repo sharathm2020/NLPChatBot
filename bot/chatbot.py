@@ -15,39 +15,47 @@ class ChatBot:
         self.intent_classifier = intent_classifier or TransformerIntentClassifier()
         self.context = deque(maxlen=5)
 
+        # Dictionary-based intent routing
+        self.intent_handlers = {
+            "greeting": self.handle_greeting,
+            "ask_name": self.handle_ask_name,
+            "ask_age": self.handle_ask_age,
+            "ask_time": self.handle_ask_time,
+            "ask_date": self.handle_ask_date,
+            "ask_weather": self.handle_ask_weather,
+            "ask_news": self.handle_ask_news,
+            "ask_math": self.handle_ask_math,
+            "ask_search": self.handle_ask_search,
+            "add_todo": self.handle_add_todo,
+            "get_todo": self.handle_get_todo,
+            "clear_todo": self.handle_clear_todo,
+            "goodbye": self.handle_goodbye
+        }
 
     def handle_intent(self, intent, user_input, entities):
-        if intent == "greeting":
-            return "Hello! How can I help you?"
-        elif intent == "ask_name":
-            return "I'm NLPBot, your assistant!"
-        elif intent == "ask_age":
-            return f"I'm {datetime.datetime.now().year - 2024} years old."
-        elif intent == "ask_time":
-            return f"The time is {datetime.datetime.now().strftime('%H:%M:%S')}."
-        elif intent == "ask_date":
-            return f"Today is {datetime.datetime.now().strftime('%Y-%m-%d')}."
-        elif intent == "ask_weather":
-            for ent in entities:
-                if ent[1] == "GPE":
-                    return get_weather(ent[0])
-            return get_weather()  # default city
-        elif intent == "ask_news":
-            return get_news()
-        elif intent == "ask_math":
-            return calculate(user_input)
-        elif intent == "ask_search":
-            return search_answer(user_input)
-        elif intent == "add_todo":
-            return add_todo(user_input)
-        elif intent == "get_todo":
-            return get_todos()
-        elif intent == "clear_todo":
-            return clear_todos()
-        elif intent == "goodbye":
-            return "Goodbye! Talk to you soon."
-        else:
-            return "I'm not sure how to respond to that."
+        handler = self.intent_handlers.get(intent)
+        if handler:
+            return handler(user_input, entities)
+        return "I'm not sure how to respond to that."
+
+    # Intent handler methods
+    def handle_greeting(self, *_): return "Hello! How can I help you?"
+    def handle_ask_name(self, *_): return f"I'm {self.name}, your assistant!"
+    def handle_ask_age(self, *_): return f"I'm {datetime.datetime.now().year - 2024} years old."
+    def handle_ask_time(self, *_): return f"The time is {datetime.datetime.now().strftime('%H:%M:%S')}."
+    def handle_ask_date(self, *_): return f"Today is {datetime.datetime.now().strftime('%Y-%m-%d')}."
+    def handle_ask_weather(self, user_input, entities):
+        for ent in entities:
+            if ent[1] == "GPE":
+                return get_weather(ent[0])
+        return get_weather()
+    def handle_ask_news(self, *_): return get_news()
+    def handle_ask_math(self, user_input, *_): return calculate(user_input)
+    def handle_ask_search(self, user_input, *_): return search_answer(user_input)
+    def handle_add_todo(self, user_input, *_): return add_todo(user_input)
+    def handle_get_todo(self, *_): return get_todos()
+    def handle_clear_todo(self, *_): return clear_todos()
+    def handle_goodbye(self, *_): return "Goodbye! Talk to you soon."
 
     def chat(self):
         print(f"{self.name}: Hello! Type 'bye' to exit.")

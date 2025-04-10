@@ -93,7 +93,7 @@ A: A custom intent classification model using HuggingFace Transformers and label
 
 #### Can I use this bot with my own Supabase project?
 
-A: Yes! Just set up the required tables and update your .env file.
+A: For sure. Just set up the required tables and update your .env file. Once the keys are set and your tables have the required columns, everything should be good to go.
 
 ## Authors
 

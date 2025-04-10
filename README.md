@@ -66,9 +66,9 @@ uvicorn app.main:app --reload
 - cd frontend
 - npm install
 - npm run dev
+```
 
-
-### SETTING UP YOUR .ENV CONFIG
+## SETTING UP YOUR .ENV CONFIG
 
 - SUPABASE_URL=your_supabase_url
 - SUPABASE_KEY=your_supabase_anon_key
@@ -76,7 +76,7 @@ uvicorn app.main:app --reload
 - NEWS_API_KEY=your_news_api_key (optional)
 
 
-### NOTES ABOUT SUPABASE
+## NOTES ABOUT SUPABASE
 - RLS (Row-Level Security) is enforced
 
 - You will need to set up your own Supabase tables for chat_history, todos, and users

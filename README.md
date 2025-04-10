@@ -1,22 +1,22 @@
-# 🤖 NLPChatBot
+# NLPChatBot
 
 An end-to-end Natural Language Processing chatbot with intent classification, to-do management, search, math evaluation, and secure user-based storage using Supabase. Built with Python, FastAPI, and a React frontend.
 
 ---
 
-## 🚀 Features
+## Features
 
-- 💬 Intent classification using a custom-trained Transformer
-- 🧠 Rule-based and ML-based response handling
-- 🗂️ To-do list management with database storage
-- 📄 File upload support (PDF, etc.)
-- 📡 RESTful API powered by FastAPI
-- 🔐 Authenticated user support with Supabase Auth and RLS
-- 🧪 Test suite for backend endpoints
+- Intent classification using a custom-trained Transformer
+- Rule-based and ML-based response handling
+- To-do list management with database storage
+- File upload support (PDF, etc.)
+- RESTful API powered by FastAPI
+- Authenticated user support with Supabase Auth and RLS
+- Test suite for backend endpoints
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**: React + Vite + Tailwind CSS
 - **Backend**: Python + FastAPI
@@ -26,15 +26,15 @@ An end-to-end Natural Language Processing chatbot with intent classification, to
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 NLPChatBot/ ├── app/ # FastAPI routes ├── model/ # ML logic and core chatbot engine ├── data/ # Local data (ignored via .gitignore) ├── frontend/ # React-based frontend ├── scripts/ # Training and setup scripts ├── .env # Secret keys (not included) ├── main.py # Entry point for chatbot └── requirements.txt # Python dependencies
 
 ---
 
-## 🧪 Installation & Usage
+## Installation & Usage
 
-### 🔧 Backend Setup
+### Backend Setup
 
 ```bash
 # 1. Clone the repository

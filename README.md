@@ -28,9 +28,9 @@ An end-to-end Natural Language Processing chatbot with intent classification, to
 
 ## 📁 Project Structure
 
-NLPChatBot/ │ ├── app/ # FastAPI routes ├── model/ # ML logic and core chatbot engine ├── data/ # Local data (ignored via .gitignore) ├── frontend/ # React-based frontend ├── scripts/ # Training and setup scripts ├── .env # Secret keys (not included) └── main.py # Entry point for chatbot
+NLPChatBot/ ├── app/ # FastAPI routes ├── model/ # ML logic and core chatbot engine ├── data/ # Local data (ignored via .gitignore) ├── frontend/ # React-based frontend ├── scripts/ # Training and setup scripts ├── .env # Secret keys (not included) ├── main.py # Entry point for chatbot └── requirements.txt # Python dependencies
 
-===
+---
 
 ## 🧪 Installation & Usage
 

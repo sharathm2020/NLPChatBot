@@ -1,41 +1,47 @@
-# Ignore virtual environments
 venv/
-
-# Python cache
 __pycache__/
 
-# Model artifacts
+#Model artifacts produced when running either training script
 *.pt
 *.safetensors
 *.bin
 *.pkl
 *.pth
 
-# Compiled files
 *.dll
 *.lib
 
-# HuggingFace training outputs
+# Hugging Face training outputs(extremely large files will implement Git LFS eventually)
 model/transformer_output/
 
-# Local bot data (not production-worthy)
 data/todos.json
+
 data/chat_history.json
 
-# Environment variables
 .env
 
-# FastAPI & project structure
 __pycache__/
+
 *.pyc
+
 logs/
 
 htmlcov/
+
 .coverage
+
 .cache/
+
 pytest.ini
 
 .DS_Store
+
 Thumbs.db
 
 temp_uploads/
+
+frontend/node_modules/
+
+frontend/dist/
+
+frontend/.vite/

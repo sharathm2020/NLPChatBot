@@ -3,7 +3,6 @@ import requests
 from model.config.config import WEATHER_API_KEY
 
 def get_weather(city="New York"):
-    # api_key = "1435e42b1af16b86cbd67556f60cb089" # Hardcoded key removed
     api_key = WEATHER_API_KEY
     if not api_key:
         return "Error: Weather API key not configured."

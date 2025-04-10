@@ -164,13 +164,20 @@
     {"intent": "get_todo", "text": "show me my reminders"},
     {"intent": "get_todo", "text": "what tasks do I have?"},
     {"intent": "get_todo", "text": "can you read my to-do list?"},
+    {"intent": "get_todo", "text": "show me my todo list"},
+    {"intent": "get_todo", "text": "can you show me my to-do list?"},
+    {"intent": "get_todo", "text": "can you show me my todo list?"},
+    {"intent": "get_todo", "text": "show todo list"},
+    {"intent": "get_todo", "text": "show to-do list"},
 
-    
     {"intent": "clear_todo", "text": "clear my reminders"},
     {"intent": "clear_todo", "text": "delete all to-dos"},
     {"intent": "clear_todo", "text": "clear my to-do list"},
     {"intent": "clear_todo", "text": "clear out all my tasks"},
     {"intent": "clear_todo", "text": "remove everything from my to-do list"},
+    {"intent": "clear_todo", "text": "clear my todo list"},
+    {"intent": "clear_todo", "text": "remove everything from my to-do list"},
+    {"intent": "clear_todo", "text": "can you clear my todo list?"},
 
 
     {"intent": "goodbye", "text": "bye"},

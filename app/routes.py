@@ -1,9 +1,13 @@
 import logging
-import os
-from fastapi import APIRouter, UploadFile, File
+from fastapi import APIRouter, UploadFile, File, Request, HTTPException, status, Depends
 from fastapi.responses import JSONResponse
 from app.schemas import ChatRequest, ChatResponse
 from app.services.chatbot_service import process_message
+from model.core.storage import save_uploaded_file
+from model.db.auth import get_authenticated_user
+from model.db.chat_db import get_chat_history
+from typing import List, Dict, Any
+from app.todo_routes import get_current_user_id
 
 logger = logging.getLogger(__name__)
 if not logger.hasHandlers():
@@ -11,31 +15,50 @@ if not logger.hasHandlers():
 
 router = APIRouter(prefix="/chat", tags=["Chat"])
 
-UPLOAD_DIR = "temp_uploads"
-os.makedirs(UPLOAD_DIR, exist_ok=True)
-
+# -----------------------------
+# Chat Message Endpoint
+# -----------------------------
 @router.post("/", response_model=ChatResponse)
-def chat_endpoint(request: ChatRequest):
-    logger.info(f"📥 Received message: {request.message}")
-    response = process_message(request.message)
-    logger.info(f"📤 Responding with: {response}")
+async def chat_endpoint(request: ChatRequest, user_id: str = Depends(get_current_user_id)):
+    logger.info(f"Received message from user {user_id}: {request.message}")
+
+    response = process_message(request.message, user_id=user_id)
+
+    logger.info(f"Responding to user {user_id} with: {response}")
     return {"response": response}
 
-@router.post("/upload")
-async def upload_file(file: UploadFile = File(...)):
+# -----------------------------
+# Chat History Endpoint
+# -----------------------------
+@router.get("/history", response_model=List[Dict[str, Any]])
+async def get_chat_history_endpoint(user_id: str = Depends(get_current_user_id)):
+    """Fetches chat history for the authenticated user."""
+    logger.info(f"Fetching chat history for user: {user_id}")
     try:
-        file_path = os.path.join(UPLOAD_DIR, file.filename)
-        with open(file_path, "wb") as f:
-            content = await file.read()
-            f.write(content)
+        history = get_chat_history(user_id=user_id)
+        return history
+    except Exception as e:
+        logger.error(f"Error fetching chat history for user {user_id}: {e}")
+        raise HTTPException(status_code=500, detail="Failed to retrieve chat history.")
 
-        logger.info(f"📎 File saved: {file.filename} -> {file_path}")
+# -----------------------------
+# File Upload Endpoint
+# -----------------------------
+@router.post("/upload")
+async def upload_file(file: UploadFile = File(...), user_id: str = Depends(get_current_user_id)):
+    logger.info(f"📎 Receiving file upload from user {user_id}: {file.filename}")
 
-        # 🔥 Enhanced message for chatbot UI
-        message = f"📁 File **{file.filename}** uploaded successfully. Saved to `temp_uploads/`."
+    try:
+        content = await file.read()
+        saved_path = save_uploaded_file(file.filename, content, user_id=user_id)
+
+        logger.info(f"File saved for user {user_id}: {file.filename} -> {saved_path}")
+        message = f"File **{file.filename}** uploaded successfully and saved."
+
         return JSONResponse(content={"success": True, "response": message}, status_code=200)
 
+    except HTTPException as http_exc:
+        raise http_exc
     except Exception as e:
-        logger.error(f"❌ File upload failed: {e}")
+        logger.error(f"File upload failed for user {user_id}: {e}")
         return JSONResponse(content={"success": False, "response": f"Upload failed: {e}"}, status_code=500)
-

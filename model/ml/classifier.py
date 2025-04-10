@@ -9,6 +9,6 @@ class IntentClassifier:
         self.pipeline = joblib.load(MODEL_PATH)
 
     def predict(self, text: str) -> str:
-        text = text.lower().strip()  # Normalize
+        text = text.lower().strip()
         return self.pipeline.predict([text])[0]
 

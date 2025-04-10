@@ -6,11 +6,12 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, Trainer, TrainingArguments
 from tabulate import tabulate
+from model.core.storage import BASE_DIR
 import pprint
 import os
 
 # Load data
-with open("data/intents.json") as f:
+with open(os.path.join(BASE_DIR, "intents.json")) as f:
     raw_data = json.load(f)
 
 texts = [item["text"] for item in raw_data]
@@ -19,7 +20,7 @@ label2id = {label: i for i, label in enumerate(labels)}
 id2label = {i: label for label, i in label2id.items()}
 intents = [label2id[item["intent"]] for item in raw_data]
 
-# Split dataset
+# Split dataset use 1/3 for testing, rest for training
 train_texts, test_texts, train_labels, test_labels = train_test_split(
     texts, intents, test_size=0.2, stratify=intents, random_state=42
 )
@@ -39,6 +40,7 @@ class IntentDataset(Dataset):
             "labels": torch.tensor(self.labels[idx]),
         }
 
+#Use DistilBERT as the base model -> Will upgrade to BERT model at some point
 tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
 
 train_dataset = IntentDataset(train_texts, train_labels, tokenizer)
@@ -68,17 +70,16 @@ trainer = Trainer(
 
 trainer.train()
 
-# Save model
 model.save_pretrained("./model/transformer_output")
 tokenizer.save_pretrained("./model/transformer_output")
 
-print("✅ Transformer fine-tuning complete. Model saved.")
+print("Transformer fine-tuning complete. Model saved.")
 
-# Evaluate on test set
+# Ideally want to evaulate on a validation set, but for now we use the test
 predictions = trainer.predict(test_dataset)
 preds = torch.argmax(torch.tensor(predictions.predictions), axis=1)
 
-all_label_ids = sorted(id2label.keys())  # Ensures correct index alignment
+all_label_ids = sorted(id2label.keys()) 
 
 report = classification_report(
     test_labels,
@@ -86,18 +87,18 @@ report = classification_report(
     labels=all_label_ids,
     target_names=[id2label[i] for i in all_label_ids],
     output_dict=True,
-    zero_division=0  # prevent divide-by-zero errors on missing labels
+    zero_division=0
 )
 
-# Save metrics
 os.makedirs("model", exist_ok=True)
 with open("model/metrics.json", "w") as f:
     json.dump(report, f, indent=2)
 
 print("📊 Evaluation complete. Metrics saved to model/metrics.json")
 
-# Print a readable table
-print("\n📊 Intent Classification Report:")
+#Print out metric table from Intent Classifier training/testing runs
+#Include all pertaining metrics such as precision, recall, f1 etc..
+print("\n Intent Classification Report:")
 headers = ["Intent", "Precision", "Recall", "F1-Score", "Support"]
 rows = []
 
@@ -114,8 +115,8 @@ for label in all_label_ids:
         ])
 print(tabulate(rows, headers=headers, tablefmt="pretty"))
 
-# Print summary stats
-print("\n📈 Averages:")
+#Print out stats of micro/macro/weighted averages of scores
+print("\n Averages:")
 summary_keys = ["micro avg", "macro avg", "weighted avg"]
 for key in summary_keys:
     avg = report.get(key)

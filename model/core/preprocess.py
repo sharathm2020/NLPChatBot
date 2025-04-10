@@ -1,7 +1,6 @@
 import re
 
 def clean_math_input(text: str) -> str:
-    # Remove only the filler prefix
     return re.sub(r"^(what\s+is|calculate|compute|solve)\s+", "", text, flags=re.IGNORECASE).strip()
 
 

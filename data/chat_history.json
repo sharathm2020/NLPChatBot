@@ -473,5 +473,120 @@
     "timestamp": "2025-04-04T00:52:24.326220",
     "user": "remind me to finish my assignment",
     "bot": "Got it! I\u2019ve added 'finish my assignment' to your to-do list."
+  },
+  {
+    "timestamp": "2025-04-04T12:15:43.293192",
+    "user": "hello",
+    "bot": "Hello! How can I help you?"
+  },
+  {
+    "timestamp": "2025-04-04T12:16:14.305702",
+    "user": "add assignment1 to my to-do list",
+    "bot": "Got it! I\u2019ve added 'assignment1' to your to-do list."
+  },
+  {
+    "timestamp": "2025-04-04T12:16:20.236081",
+    "user": "show me my to-do list",
+    "bot": "I'm not sure what you meant. Could you rephrase that?"
+  },
+  {
+    "timestamp": "2025-04-04T12:16:28.548960",
+    "user": "can you show me my to-do list?",
+    "bot": "I'm not sure what you meant. Could you rephrase that?"
+  },
+  {
+    "timestamp": "2025-04-04T12:16:32.155220",
+    "user": "show to-do list",
+    "bot": "I'm not sure what you meant. Could you rephrase that?"
+  },
+  {
+    "timestamp": "2025-04-04T12:16:40.288981",
+    "user": "clear my to-do list",
+    "bot": "I'm not sure what you meant. Could you rephrase that?"
+  },
+  {
+    "timestamp": "2025-04-04T12:16:52.801874",
+    "user": "Clear my reminders",
+    "bot": "I'm not sure what you meant. Could you rephrase that?"
+  },
+  {
+    "timestamp": "2025-04-04T12:16:58.009810",
+    "user": "delete all to-dos",
+    "bot": "I'm not sure what you meant. Could you rephrase that?"
+  },
+  {
+    "timestamp": "2025-04-04T14:01:00.906336",
+    "user": "hello",
+    "bot": "Hello! How can I help you?"
+  },
+  {
+    "timestamp": "2025-04-04T14:01:04.158581",
+    "user": "show me my todo list",
+    "bot": "Here\u2019s your current to-do list:\n- finish assignment 1\n- submit hw\n- add_todo\n- walk the dog\n- do cs hw\n- grocery shopping\n- buy milk\n- finish my assignment\n- assignment1"
+  },
+  {
+    "timestamp": "2025-04-04T14:01:08.250210",
+    "user": "clear my todo list",
+    "bot": "I'm not sure what you meant. Could you rephrase that?"
+  },
+  {
+    "timestamp": "2025-04-04T14:01:12.954167",
+    "user": "clear todo list",
+    "bot": "I'm not sure what you meant. Could you rephrase that?"
+  },
+  {
+    "timestamp": "2025-04-04T14:01:23.014979",
+    "user": "clear out all my tasks",
+    "bot": "I'm not sure what you meant. Could you rephrase that?"
+  },
+  {
+    "timestamp": "2025-04-04T14:01:29.237924",
+    "user": "can you clear my todo list?",
+    "bot": "I'm not sure what you meant. Could you rephrase that?"
+  },
+  {
+    "timestamp": "2025-04-04T14:01:34.420224",
+    "user": "delete all to-dos",
+    "bot": "I'm not sure what you meant. Could you rephrase that?"
+  },
+  {
+    "timestamp": "2025-04-04T14:01:40.698911",
+    "user": "show todo list",
+    "bot": "Here\u2019s your current to-do list:\n- finish assignment 1\n- submit hw\n- add_todo\n- walk the dog\n- do cs hw\n- grocery shopping\n- buy milk\n- finish my assignment\n- assignment1"
+  },
+  {
+    "timestamp": "2025-04-04T14:01:52.479327",
+    "user": "what is 12 x 12",
+    "bot": "The answer is 144.000000000000"
+  },
+  {
+    "timestamp": "2025-04-04T14:02:01.995871",
+    "user": "what is 13 x (2 + 1)",
+    "bot": "The answer is 39.0000000000000"
+  },
+  {
+    "timestamp": "2025-04-04T14:02:08.843570",
+    "user": "what is your name?",
+    "bot": "I'm NLPBot, your assistant!"
+  },
+  {
+    "timestamp": "2025-04-04T14:02:17.574405",
+    "user": "give me the latest headlines",
+    "bot": "I'm not sure what you meant. Could you rephrase that?"
+  },
+  {
+    "timestamp": "2025-04-04T14:02:22.970452",
+    "user": "give me financial news",
+    "bot": "I'm not sure what you meant. Could you rephrase that?"
+  },
+  {
+    "timestamp": "2025-04-04T14:02:28.395941",
+    "user": "what time is it?",
+    "bot": "The time is 14:02:28."
+  },
+  {
+    "timestamp": "2025-04-04T14:02:38.010098",
+    "user": "what is the weather today?",
+    "bot": "The weather in New York is clear sky, around 18.71\u00b0C."
   }
 ]
